@@ -1,0 +1,20 @@
+{
+    "name": "nRF Connect SDK devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "NCS_REVISION": "v2.4-branch"
+        }
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "nordic-semiconductor.nrf-connect-extension-pack"
+            ]
+        }
+    }
+}
